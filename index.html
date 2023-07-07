@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Formulario</title>
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#btnEnviar").click(function() {
+        // Redirigir a la página2.html después de hacer clic en Enviar
+        window.location.href = "pagina2.html";
+      });
+    });
+  </script>
+</head>
+<body>
+  <img src="https://www.snpp.edu.py/images/slide/nuevo-banner.png" alt="Cabecera" style="max-width: 100%;">
+  <div class="container">
+    <h1>Formulario</h1>
+    <form>
+      <div class="form-group">
+        <label for="nombres">Nombres</label>
+        <input type="text" class="form-control" id="nombres">
+      </div>
+      <div class="form-group">
+        <label for="apellidos">Apellidos</label>
+        <input type="text" class="form-control" id="apellidos">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="contrasena">Contraseña</label>
+        <input type="password" class="form-control" id="contrasena">
+      </div>
+      <div class="form-group">
+        <label for="ciudad">Ciudad</label>
+        <select class="form-control" id="ciudad">
+          <option value="ciudad1">Ita</option>
+          <option value="ciudad2">Itaugua</option>
+          <option value="ciudad3">J.Augusto</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea class="form-control" id="mensaje"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="archivo">Insertar archivo</label>
+        <input type="file" class="form-control-file" id="archivo">
+      </div>
+      <button type="button" id="btnEnviar" class="btn btn-primary">Enviar</button>
+      <button type="button" class="btn btn-danger">Cancelar</button>
+    </form>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
